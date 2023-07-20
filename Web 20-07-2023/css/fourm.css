@@ -1,0 +1,106 @@
+nav {
+    background-color: darkcyan;
+    overflow: hidden;
+}
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul.menu.left > li {
+    border: 1px solid white;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+ul.menu > li > a {
+    text-decoration: none;
+    display: block;
+    padding: 1.5rem;
+}
+ul.menu > li > a:hover {
+    background-color: mediumaquamarine;
+    color: wheat;
+}
+.flex {
+    display: flex;
+}
+.between {
+    justify-content: space-between;
+}
+header {
+    background: linear-gradient(darkblue,blue)
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px aquamarine;
+    color: snow;
+    font-size: 50px;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: snow;
+}
+.submenu {
+    padding: 1rem;
+    background-color: cadetblue;
+    display: none;
+    position: absolute;
+    overflow: hidden;
+}
+.submenu::after {
+    content: "";
+    border-width: 1rem;
+    border-style: solid;
+    border-color: transparent transparent cadetblue transparent;
+    position: absolute;
+    bottom: 100%;
+}
+.sub:hover .submenu {
+    display: block;
+}
+.avatar {
+    width: 100px;
+    border-radius: 50%;
+}
+.fourm {
+    background-color: lightblue;
+    padding: 0.5rem;
+    border-bottom: 1px solid white;
+}
+.fourm:last-child {
+    border-radius: 0 0 10px 10px;
+}
+h2.subject {
+    background-color: darkblue;
+    margin-bottom: 2px;
+    padding: 0.5rem;
+    border-radius: 10px 10px 0 0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.ads > div {
+    background: linear-gradient(darkblue,blue);
+    color: white;
+    width: 10%;
+    position: fixed;
+    margin-top: 0.5rem;
+    text-align: center;
+    padding: 5rem 0;
+    border-radius: 20px;
+}
+.ads > .left {
+    left: 0;
+}
+.ads > .right {
+    right: 0;
+}
+footer {
+    background-color: darkblue;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
