@@ -1,0 +1,28 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    text-shadow: 1px 1px gold ;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.thumb > div {
+    width: 20%;
+}
+
+.demo img {
+    width: 50%;
+}
+
+.demo>div:first-child{
+    width: 20%;
+}
+
+.btn button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid transparent;
+}
