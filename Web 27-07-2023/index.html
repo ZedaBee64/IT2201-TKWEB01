@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js"></script>
+    <style>
+        @keyframes err {
+            from {
+                outline: unset;
+            }
+            to {
+                outline: 1px solid red;
+            }
+        }
+        .error {
+            animation: err 0.5s 3;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>a = </td>
+            <td>
+                <input type="number" id="aId"/>
+            </td>
+        </tr>
+        <tr>
+            <td>b = </td>
+            <td>
+                <input type="number" id="bId"/>
+            </td>
+        </tr>
+        <tr>
+            <td>c = </td>
+            <td>
+                <input type="number" id="cId"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" value="Giải" onclick="giaiBac2()">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="kq">...</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td colspan="2">Chuyển đổi đơn vị tiền tệ</td>
+        </tr>
+        <tr>
+            <td>Số tiền = </td>
+            <td>
+                <input type="number" id="stId"/>(VNĐ)
+            </td>
+        </tr>
+        <tr>
+            <td>Đơn vị = </td>
+            <td>
+                <select id="dvId">
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="aud">AUD</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" value="Đổi" onclick="doiTienTe()">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="result"></td>
+        </tr>
+    </table>
+</body>
+</html>
